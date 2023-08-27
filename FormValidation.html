@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation</title>
+    <!-- font -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Ubuntu&display=swap" -->
+    <!-- rel="stylesheet"> -->
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Register Here</h1>
+        </div>
+        <form action="index.html" class="form" id="form">
+
+            <div class="field">
+                <label>Username</label>
+                <input type="text" name="userName" placeholder="Enter Username" id="userName">
+                <span class="material-symbols-outlined success">
+                    check_circle
+                </span>
+                <span class="material-symbols-outlined error">
+                    error
+                </span>
+                <small>Error message</small>
+            </div>
+
+            <div class="field">
+                <label>Email </label>
+                <input type="text" name="emailId" placeholder="abc@gmail.com" id="email">
+                <span class="material-symbols-outlined success">
+                    check_circle
+                </span>
+                <span class="material-symbols-outlined error">
+                    error
+                </span>
+                <small>Error message</small>
+            </div>
+
+            <div class="field">
+                <label>Password </label>
+                <input type="password" name="emailId" placeholder="Enter Password" id="password">
+                <span class="material-symbols-outlined success">
+                    check_circle
+                </span>
+                <span class="material-symbols-outlined error">
+                    error
+                </span>
+                <small>Error message</small>
+            </div>
+            <div class="field">
+                <label>Confirm Password</label>
+                <input type="password" name="confirm" placeholder="Re enter Password" id="confirmPwd">
+                <span class="material-symbols-outlined success">
+                    check_circle
+                </span>
+                <span class="material-symbols-outlined error">
+                    error
+                </span>
+                <small>Error message</small>
+            </div>
+            <div class="field">
+                
+                <input type="checkbox" id="tc" class="terms">
+                <label>I agree to the terms and Conditions</label>
+                <small>Error message</small>
+            </div>
+            <input type="submit" class="button">
+    </div>
+    <script src="validation.js"></script>
+
+</body>
+
+</html>
